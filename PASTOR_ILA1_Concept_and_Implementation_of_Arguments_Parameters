@@ -1,0 +1,66 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNyo3HDsmlobij4h9j8aKgD",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/gjcpastor31-hash/Q2_ASSESSMENTS/blob/main/PASTOR_ILA1_Concept_and_Implementation_of_Arguments_Parameters\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k3nT1fsJkV2A",
+        "outputId": "45ca4cda-b22e-487b-bd31-d617b3a87788"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter distance traveled (in kilometers): 450\n",
+            "Enter fuel consumed (in liters): 30\n",
+            "\n",
+            "Fuel Efficiency: 15.0 km/L\n"
+          ]
+        }
+      ],
+      "source": [
+        "def calculate_fuel(distance, fuel):\n",
+        "    ans = distance / fuel\n",
+        "    return ans\n",
+        "\n",
+        "distance = float(input(\"Enter distance traveled (in kilometers): \"))\n",
+        "fuel = float(input(\"Enter fuel consumed (in liters): \"))\n",
+        "\n",
+        "result = calculate_fuel(distance,fuel)\n",
+        "\n",
+        "print()\n",
+        "print(\"Fuel Efficiency:\", result, \"km/L\")\n"
+      ]
+    }
+  ]
+}
